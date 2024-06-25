@@ -283,7 +283,6 @@ export const ImagesList = ({ albumName, onBack }) => {
                 src={image.url}
                 alt={image.title}
                 onError={({ currentTarget }) => {
-                  console.log("inside error");
                   currentTarget.src = "/assets/warning.png";
                 }}
               />

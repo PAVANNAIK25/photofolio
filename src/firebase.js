@@ -1,14 +1,14 @@
 // create and initialize your own firebase here
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-
+console.log(process.env);
 const firebaseConfig = {
-    apiKey: "AIzaSyAVEZAliZ4wVjy0YgMso-4U00mfuIFlb2s",
-    authDomain: "photofolio-aba3c.firebaseapp.com",
-    projectId: "photofolio-aba3c",
-    storageBucket: "photofolio-aba3c.appspot.com",
-    messagingSenderId: "894333896728",
-    appId: "1:894333896728:web:bbf1c1daa4171aca8e9b6d"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
