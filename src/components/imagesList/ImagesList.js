@@ -20,9 +20,6 @@ export const ImagesList = ({ albumName, onBack }) => {
   const [activeImageIndex, setActiveImageIndex] = useState(null);
   const [activeHoverImageIndex, setActiveHoverImageIndex] = useState(null);
 
-  
-  
-
   // async function gets images from DB in real time
   const getImages = async () => {
     setLoading(true);
